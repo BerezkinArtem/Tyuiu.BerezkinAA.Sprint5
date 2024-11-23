@@ -8,8 +8,6 @@ namespace Tyuiu.BerezkinAA.Sprint5.Task0.V28
             int a = 3;
             DataService ds = new DataService();
 
-            
-
             Console.Title = "Спринт #5 | Выполнил: Березкин А.А | ИСПб-24-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
