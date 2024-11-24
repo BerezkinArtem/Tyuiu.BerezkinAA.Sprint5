@@ -8,6 +8,7 @@ namespace Tyuiu.BerezkinAA.Sprint5.Task4.V9.Lib
             string strX = File.ReadAllText(path);
             double res = Math.Round((1 / Math.Sin(Convert.ToDouble(strX)) + Convert.ToDouble(strX) * Convert.ToDouble(strX)), 3);
             return res;
+
         }
     }
 }
