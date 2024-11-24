@@ -23,7 +23,7 @@ namespace Tyuiu.BerezkinAA.Sprint5.Task4.V9
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            string path = Path.Combine(Path.GetTempPath(), "InPutDataFileTask4.tx");
+            string path = Path.Combine(Path.GetTempPath(), "InPutDataFileTask4.txt");
             Console.WriteLine("Данные находятся в файле:" + path);
 
 
