@@ -9,9 +9,9 @@ namespace Tyuiu.BerezkinAA.Sprint5.Task5.V25.Lib
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
-                while((line = reader.ReadLine()) != null)
+                while((line = reader.ReadLine()) == null)
                 {
-                    res = res * Convert.ToDouble(line);
+                    res *= Convert.ToDouble(line);
                 }
             }
             return res;
