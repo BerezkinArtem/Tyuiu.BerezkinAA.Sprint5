@@ -28,7 +28,7 @@ namespace Tyuiu.BerezkinAA.Sprint5.Task7.V18.Lib
                         }
                     }
                     File.AppendAllText(pathSaveFile, strLine + Environment.NewLine);
-                    strLine = "";
+                    
                 }
                 return pathSaveFile;
             }
