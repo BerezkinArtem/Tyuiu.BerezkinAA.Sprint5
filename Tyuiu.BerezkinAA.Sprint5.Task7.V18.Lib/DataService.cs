@@ -9,29 +9,17 @@ namespace Tyuiu.BerezkinAA.Sprint5.Task7.V18.Lib
 
             FileInfo fileInfo = new FileInfo(pathSaveFile);
             bool fileExists = fileInfo.Exists;
+
             if (fileExists)
             {
                 File.Delete(pathSaveFile);
             }
+            string fileContent = File.ReadAllText(path);
 
-            string strLine = "н";
-            using (StreamReader reader = new StreamReader(path))
-            {
-                string line;
-                while ((line = reader.ReadLine()) != null)
-                {
-                    for (int i = 0; i < line.Length; i++)
-                    {
-                        if (line[i] == 'н') 
-                        {
-                            strLine = strLine.Replace("н", "нн");
-                        }
-                    }
-                    File.AppendAllText(pathSaveFile, strLine + Environment.NewLine);
-                    strLine = strLine.Replace("н", "нн");
-                }
-                return pathSaveFile;
-            }
+            string modifiedContent = fileContent.Replace("н", "нн");
+
+            File.WriteAllText(pathSaveFile, modifiedContent);
+            return pathSaveFile;
         }
     }
 }
