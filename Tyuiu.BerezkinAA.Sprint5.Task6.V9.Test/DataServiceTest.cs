@@ -11,7 +11,7 @@ namespace Tyuiu.BerezkinAA.Sprint5.Task6.V9.Test
             string path = @"D:\VisualStudioRepos\Tyuiu.BerezkinAA.Sprint5\Tyuiu.BerezkinAA.Sprint5.Task6.V9\bin\Debug\InPutDataFileTask6V9.txt";
 
             var res = ds.LoadFromDataFile(path);
-            int wait = 1;
+            int wait = 2;
             Assert.AreEqual(wait, res);
         }
         [TestMethod]
