@@ -22,13 +22,13 @@ namespace Tyuiu.BerezkinAA.Sprint5.Task7.V18.Lib
                 {
                     for (int i = 0; i < line.Length; i++)
                     {
-                        if (line[i] != 'н') 
+                        if (line[i] == 'н') 
                         {
                             strLine = strLine.Replace("н", "нн");
                         }
                     }
                     File.AppendAllText(pathSaveFile, strLine + Environment.NewLine);
-                    
+                    strLine = strLine.Replace("н", "нн");
                 }
                 return pathSaveFile;
             }
