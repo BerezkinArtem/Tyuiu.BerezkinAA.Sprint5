@@ -14,7 +14,7 @@ namespace Tyuiu.BerezkinAA.Sprint5.Task7.V18.Lib
                 File.Delete(pathSaveFile);
             }
 
-            string strLine = "";
+            string strLine = "н";
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
